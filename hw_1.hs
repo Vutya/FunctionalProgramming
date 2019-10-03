@@ -102,5 +102,3 @@ getsHelper strs (x:l) res = getsHelper strs l ((get1 x strs):res)
 
 getStrings :: [String] -> [Int] -> [String]
 getStrings m nums =  getsHelper m nums []
-
-

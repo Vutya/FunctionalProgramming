@@ -9,3 +9,4 @@ Haskell Wikibook. Читайте разделы в Haskell Basics: Variables and
 Кубенский А.А. Функциональное программирование. Для доступа к сайту издательства Юрайт перейдите по ссылке http://cufts.library.spbu.ru/CRDB/SPBGU/resource/306/goto и введите свои университетские логин и пароль.
 
 Foldl vs foldr: https://gist.github.com/CMCDragonkai/9f5f75118dda10131764
+

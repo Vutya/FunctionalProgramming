@@ -45,6 +45,4 @@ instance Ord Point2D where
     compare p1 p2 | (len p1) == (len p2) = EQ
                   | (len p1) > (len p2) = GT
                   | (len p1) < (len p2) = LT
-
-
                             

@@ -42,7 +42,8 @@ instance Eq Point2D where
     (Point2D a1 b1) == (Point2D a2 b2) = (a1 == a2) && (b1 == b2)
 
 instance Ord Point2D where
-    compare p1 p2 | (len p1) == (len p2) = EQ
-                  | (len p1) > (len p2) = GT
-                  | (len p1) < (len p2) = LT
+    compare p1 p2 | l1 == l2 = EQ
+                  | l1 > l2 = GT
+                  | l1 < l2 = LT 
+                      where (l1, l2) = (len p1, len p2)
                             

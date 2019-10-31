@@ -47,7 +47,7 @@
 -- Int будет переворачиваемым.
 --instance Reversable Int where
 --       rev :: Int -> Int
---       rev = list2num.reverse.num2list where
+--       rev = list2num.num2list where
 -- list2um = foldl (\a x -> 10 * a + x) 0
 -- num2list 0 = []
 -- num2list n = (n `mod` 10): num2list (n `div` 10)

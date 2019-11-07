@@ -46,4 +46,29 @@ instance Ord Point2D where
                   | l1 > l2 = GT
                   | l1 < l2 = LT 
                       where (l1, l2) = (len p1, len p2)
+
+
+-- zip, zipWith & unzip 
+-- Task 1: zipWithIndex - List of Tuples of Index and Element
+zipWithIndex :: [a] -> [(Int, a)]
+--zipWithIndex l = zip [0..n-1] l where n = length l
+zipWithIndex = zip [0..]
+
+-- Task 2: Sum of Element and Index
+zipAndSum :: [Int] -> [Int]
+--zipAndSum l = zipWith (+) [0..n-1] l where n = length l
+zipAndSum = zipWith (+) [0..]
+
+-- Task 3: List with Zeros on Even Indexes
+evenZeros :: [Int] -> [Int]
+evenZeros l = map (\(x, y) -> if even x then y else 0) (zipWithIndex l)
+
+-- Task 4: Remove Elements with Even Indexes
+removeEven :: [a] -> [a]
+--removeEven l = snd (unzip (filter (\(x, y) -> even x) (zipWithIndex l)))
+removeEven = snd . unzip . filter (\(x, _) -> even x) . zipWithIndex
+
+-- Task 5: List of Digit Tuples from Numbers 10..99
+digits :: [Int] -> ([Int], [Int])
+digits = unzip . map (`divMod` 10)
                             

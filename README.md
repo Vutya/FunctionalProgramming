@@ -1,3 +1,5 @@
+http://students.iposov.spb.ru/19fall/functional_programming/
+
 There are functional programming lectures and homeworks.
 
 haskell.org для установки

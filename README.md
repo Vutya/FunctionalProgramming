@@ -12,3 +12,5 @@ Haskell Wikibook. Читайте разделы в Haskell Basics: Variables and
 
 Foldl vs foldr: https://gist.github.com/CMCDragonkai/9f5f75118dda10131764
 
+Лекция по функторам, аппликативным функторам и монадам: https://nbviewer.jupyter.org/github/iposov/students-site/blob/master/19fall/functional_programming/functors-applicative-monads.ipynb?refresh=1
+
